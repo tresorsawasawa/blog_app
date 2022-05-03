@@ -1,0 +1,16 @@
+@import './variable';
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $white-color;
+}
+
+.clickable {
+  cursor: pointer;
+}
