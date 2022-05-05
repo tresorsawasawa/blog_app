@@ -21,7 +21,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-1. Download the `Zip` file or Clone the repo with 
+1. Download the `Zip` file or **Clone the repo with**:
   ```bash
   git clone https://github.com/tresorsawasawa/blog_app.git
   ``` 
@@ -37,7 +37,7 @@ rails s
 ```
 
 ```
-Check `http://localhost:3000/` in your browser
+Check http://localhost:3000/ in your browser
 ```
 
 ### Run Test
