@@ -8,18 +8,18 @@ RSpec.describe 'Posts Controller', type: :request do
       expect(response.body).to include('Comments: x, Likes: x')
       expect(response.body).to include('Pagination')
     end
-  
+
     it 'GET users/id/posts should succeed' do
       get '/users/id/posts'
       expect(response).to have_http_status(:ok)
     end
-  
+
     it 'does not render a different template' do
       get '/users/id/posts'
       expect(response).to_not render_template(:show)
     end
   end
- 
+
   describe 'GET /show' do
     it 'Redirects to the posts profile page' do
       get '/users/id/posts/id'
@@ -31,7 +31,7 @@ RSpec.describe 'Posts Controller', type: :request do
       get '/users/id/posts/id'
       expect(response).to have_http_status(:ok)
     end
-  
+
     it 'does not render a different template' do
       get '/users/id/posts/id'
       expect(response).to_not render_template(:index)

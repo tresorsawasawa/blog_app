@@ -13,7 +13,7 @@ RSpec.describe 'Users Controller', type: :request do
       get '/users'
       expect(response).to have_http_status(:ok)
     end
-  
+
     it 'does not render a different template' do
       get '/users'
       expect(response).to_not render_template(:show)
@@ -28,12 +28,12 @@ RSpec.describe 'Users Controller', type: :request do
       expect(response.body).to include('Bio')
       expect(response.body).to include('Post #2')
     end
-  
+
     it 'GET users/id should succeed' do
       get '/users/id'
       expect(response).to have_http_status(:ok)
     end
-    
+
     it 'does not render a different template' do
       get '/users/id'
       expect(response).to_not render_template(:index)
