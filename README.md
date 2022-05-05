@@ -21,8 +21,14 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-1. Clone the repo with `git clone https://github.com/tresorsawasawa/blog_app.git` or Download the `Zip` file.
-2. `cd blog_app` to access the directory 
+1. Download the `Zip` file or Clone the repo with 
+  ```bash
+  git clone https://github.com/tresorsawasawa/blog_app.git
+  ``` 
+2. To access the directory
+  ```bash
+  cd blog_app
+  ```
 
 ### Run the  App
 

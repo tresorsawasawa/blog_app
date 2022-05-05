@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Posts Controller', :type => :request do
+RSpec.describe 'Posts Controller', type: :request do
   it 'GET users/id/posts should succeed' do
     get '/users/id/posts'
     expect(response).to have_http_status(:ok)
@@ -13,8 +13,8 @@ RSpec.describe 'Posts Controller', :type => :request do
     expect(response.body).to include('Pagination')
   end
 
-  it "does not render a different template" do
-    get "/users/id/posts"
+  it 'does not render a different template' do
+    get '/users/id/posts'
     expect(response).to_not render_template(:show)
   end
 
@@ -23,14 +23,14 @@ RSpec.describe 'Posts Controller', :type => :request do
     expect(response).to have_http_status(:ok)
   end
 
-  it "Redirects to the posts profile page" do
+  it 'Redirects to the posts profile page' do
     get '/users/id/posts/id'
     expect(response).to render_template(:show)
     expect(response.body).to include('Username: Comment 10')
   end
 
-  it "does not render a different template" do
-    get "/users/id/posts/id"
+  it 'does not render a different template' do
+    get '/users/id/posts/id'
     expect(response).to_not render_template(:index)
   end
 end
