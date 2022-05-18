@@ -15,22 +15,26 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 > You need the following tools be installed in your computer:
->  - [Git](https://www.linode.com/docs/guides/how-to-install-git-on-linux-mac-and-windows/)
->  - [Ruby](https://github.com/microverseinc/curriculum-ruby/blob/main/simple-ruby/articles/ruby_installation_instructions.md)
->  - [Rails](https://www.tutorialspoint.com/ruby-on-rails/rails-installation.htm)
+>
+> - [Git](https://www.linode.com/docs/guides/how-to-install-git-on-linux-mac-and-windows/)
+> - [Ruby](https://github.com/microverseinc/curriculum-ruby/blob/main/simple-ruby/articles/ruby_installation_instructions.md)
+> - [Rails](https://www.tutorialspoint.com/ruby-on-rails/rails-installation.htm)
 
 ### Setup
 
 1. Download the `Zip` file or **Clone the repo with**:
-  ```bash
-  git clone https://github.com/tresorsawasawa/blog_app.git
-  ``` 
-2. To access the directory
-  ```bash
-  cd blog_app
-  ```
 
-### Run the  App
+```bash
+git clone https://github.com/tresorsawasawa/blog_app.git
+```
+
+2. To access the project directory
+
+```bash
+cd blog_app
+```
+
+### Run the App
 
 ```bash
 rails s
@@ -47,7 +51,7 @@ rspec spec
 ```
 
 ## Author
-  
+
 👤 **Trésor Sawasawa**
 
 - GitHub: [@tresorsawasawa](https://github.com/tresorsawasawa)
