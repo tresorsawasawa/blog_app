@@ -4,6 +4,6 @@
   </div>
   <div class="user-data">
     <a href="<%= user.id %>"><h4 class="title"><%= user.name %></h4></a>
-    <span class="user-posts">Number of posts: <%= user.posts_counter %></span>
+    <span class="user-posts">Number of posts: <%= user.posts_counter || 0 %></span>
   </div>
 </div>
