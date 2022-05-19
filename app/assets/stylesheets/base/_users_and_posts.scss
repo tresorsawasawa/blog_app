@@ -84,3 +84,7 @@
 
   @include buttons;
 }
+
+.see-posts:hover a {
+  text-decoration: none;
+}
