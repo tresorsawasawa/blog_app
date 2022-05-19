@@ -3,7 +3,7 @@
     <img src="<%= user.photo %>" alt="user image">
   </div>
   <div class="user-data">
-    <a href="users/<%= user.id %>"><h4 class="title"><%= user.name %></h4></a>
+    <a href="<%= user.id %>"><h4 class="title"><%= user.name %></h4></a>
     <span class="user-posts">Number of posts: <%= user.posts_counter || 0 %></span>
   </div>
 </div>
