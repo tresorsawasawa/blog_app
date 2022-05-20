@@ -21,5 +21,7 @@
     </div>
     <% end %>
   </div>
-  <a href="<%= @user.id%>/posts" class="see-posts clickable">See all posts</a>
+  <button class="see-posts clickable">
+    <%= link_to 'See all Post', user_posts_path(@user) %>
+  </button>
 </div>
