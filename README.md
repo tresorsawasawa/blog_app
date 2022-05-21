@@ -34,6 +34,19 @@ git clone https://github.com/tresorsawasawa/blog_app.git
 cd blog_app
 ```
 
+### Install the app
+
+```bash
+bundle install
+rails db:migrate
+```
+
+### Run the seeder
+
+```
+rails db:seed
+```
+
 ### Run the App
 
 ```bash
@@ -46,8 +59,10 @@ Check http://localhost:3000/ in your browser
 
 ### Run Test
 
+- To run the tests
+
 ```bash
-rspec spec
+rspec spec/models
 ```
 
 ## Author
