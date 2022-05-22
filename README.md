@@ -1,4 +1,4 @@
-# Blog Ap
+# Blog App
 
 ## Description
 
