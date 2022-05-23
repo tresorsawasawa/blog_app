@@ -30,6 +30,11 @@ gem 'stimulus-rails'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
 
+# Use the devise gem as the session and account manager for application
+gem 'devise'
+
+gem 'letter_opener'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
