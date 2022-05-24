@@ -1,0 +1,46 @@
+@import './mixins';
+@import './variable';
+
+.form-input {
+  @include flex-center(column);
+}
+
+.blog-container {
+  @include flex-center(column);
+
+  h2 {
+    font-weight: bold;
+  }
+
+  .new_user {
+    :nth-child(4) {
+      position: relative;
+      padding: 12px 0 12px 30px;
+
+      input[type="checkbox"] {
+        position: absolute !important;
+        left: 6px;
+        margin: 5px auto;
+        width: 15px;
+        height: 15px;
+        border: 2px solid $dark-color;
+      }
+
+      label {
+        margin-top: 3px;
+      }
+    }
+  }
+}
+
+input {
+  border: 1px solid $dark-color;
+}
+
+.text-center {
+  padding-left: 140px;
+}
+
+.actions:hover input {
+  color: $blue-link-color;
+}
