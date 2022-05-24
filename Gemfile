@@ -35,6 +35,9 @@ gem 'devise'
 
 gem 'letter_opener'
 
+# Use boostrap gem
+gem 'bootstrap', '~> 5.1.3'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
