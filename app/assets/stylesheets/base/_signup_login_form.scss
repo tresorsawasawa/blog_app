@@ -1,8 +1,23 @@
 @import './mixins';
 @import './variable';
 
-.form-input {
+input {
+  border: 1px solid $dark-color;
+}
+
+.form-wrapper {
   @include flex-center(column);
+
+  .area {
+    padding-left: 0 !important;
+  }
+
+  textarea,
+  input {
+    padding: 8px;
+    font-size: 1.2rem;
+    width: 450px;
+  }
 }
 
 .blog-container {
@@ -33,14 +48,14 @@
   }
 }
 
-input {
-  border: 1px solid $dark-color;
-}
-
 .text-center {
-  padding-left: 140px;
+  padding-left: 180px !important;
 }
 
 .actions:hover input {
   color: $blue-link-color;
+}
+
+.pad-6 {
+  padding: 8px !important;
 }
