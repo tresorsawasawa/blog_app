@@ -13,9 +13,11 @@
       <%= render partial: "post", locals: { post: post, user: @user } %>
   <% end %>
 
-  <button class="pagination clickable">Pagination</button>
-  <br>
-  <% if current_user %>
-    <%= button_to 'Add New Post', new_user_post_path(@user), method: :get, class: "clickable pagination" %>
-  <% end %>
+  <div class="d-flex">
+    <button class="pagination clickable mx-2">Pagination</button>
+  
+    <% if current_user %>
+      <%= button_to 'Add New Post', new_user_post_path(@user), method: :get, class: "clickable pagination mx-2" %>
+    <% end %>
+  </div>
 </div>
