@@ -43,31 +43,3 @@ RSpec.describe 'user_index_path', type: :system do
     end
   end
 end
-
-# it 'I can see the username of all other users.' do
-#   visit users_path
-
-#   @users.each do |u|
-#     expect(page).to have_content u.name
-#   end
-# end
-
-# it 'I can see the profile picture for each user' do
-#   visit users_path
-
-#   @users.each do |u|
-#     expect(page.find("#user_#{u.id} img")['src']).to have_content u.photo
-#   end
-# end
-
-# it 'I can see the number of posts each user has written.' do
-#   visit users_path
-
-#   @users.each do |u|
-#     expect(page).to have_content('Number of posts:')
-
-#     expect(page).to have_content u.posts_counter
-#   end
-
-
-# expect(page).to have_current_path(new_user_confirmation_path)
