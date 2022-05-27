@@ -9,7 +9,7 @@ class Ability
     else
       can :read, :all
       can :manage, Post, author_id: user.id
-      can :manage, Comment, author_id: user.i
+      can :manage, Comment, author_id: user.id
     end
   end
 end
