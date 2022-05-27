@@ -1,6 +1,6 @@
 <div class="posts-bloc">
   <div class="user-bloc">
-    <div class="user-image">
+    <div class="user-image" id="user_<%= @user.id %>">
       <img src="<%= @user.photo %>" alt="user image">
     </div>
     <div class="user-data">
@@ -15,5 +15,7 @@
 
   <button class="pagination clickable">Pagination</button>
   <br>
-  <%= button_to 'Add New Post', new_user_post_path(@user), method: :get, class: "clickable pagination" %>
+  <% if current_user %>
+    <%= button_to 'Add New Post', new_user_post_path(@user), method: :get, class: "clickable pagination" %>
+  <% end %>
 </div>
