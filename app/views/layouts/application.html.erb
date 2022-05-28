@@ -23,8 +23,9 @@
 
     <main class="blog-container">
       <% flash.each do |name, msg| -%>
-        <%= content_tag :div, msg, class: name %>
+        <%= content_tag :p, msg, class: name %>
       <% end -%>
+
       <%= yield %>
     </main>
     
