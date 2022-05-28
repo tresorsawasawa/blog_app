@@ -59,10 +59,13 @@ Check http://localhost:3000/ in your browser
 
 ### Run Test
 
-- To run the tests
-
+- To run models tests
 ```bash
 rspec spec/models
+```
+- To run views tests
+```bash
+bundle exec rspec spec/views
 ```
 
 ## Author
@@ -72,6 +75,12 @@ rspec spec/models
 - GitHub: [@tresorsawasawa](https://github.com/tresorsawasawa)
 - Twitter: [@tresorsawasawa](https://twitter.com/TresorSawasawa)
 - LinkedIn: [Trésor Sawasawa](https://www.linkedin.com/in/tresor-sawasawa/)
+
+👤 **Kandi Peter**
+
+- GitHub: [Kandi-Peter](https://github.com/Kandy-Peter)
+- LinkedIn: [Kandi-Kamuntu](https://www.linkedin.com/in/kandi-peter-a49590212/)
+- twitter: [Kandi_Peter](https://twitter.com/peter_kandy)
 
 ## 🤝 Contributing
 
