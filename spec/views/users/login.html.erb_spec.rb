@@ -11,7 +11,7 @@ RSpec.describe 'login page', type: :system do
 
     # it 'renders sign in page' do
     #   visit '/users/sign_in'
-  
+
     #   expect(page).to have_field('user_email')
     #   expect(page).to have_field('user_password')
     #   expect(page).to have_button('Log in')

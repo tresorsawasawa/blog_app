@@ -3,8 +3,8 @@ require 'rails_helper'
 RSpec.describe 'User post index page', type: :system do
   describe 'User post index page' do
     before(:each) do
-      @user = User.create!(name: 'Hello', photo: '#photo_hello', bio: 'My bio #hello !', email: 'hello@test.com',
-                           password: 'azerty123', posts_counter: 0)
+      @user = User.create!(name: 'Hello', photo: '#photo_hello', bio: 'My bio #hello !',
+                           email: 'hello@test.com', password: 'azerty123', posts_counter: 0)
 
       10.times do |i|
         @p = Post.create(author: @user, title: "#{i}/ Post ", text: "This is my #{i} post")
@@ -49,7 +49,6 @@ RSpec.describe 'User post index page', type: :system do
     it 'I can see the first comments on a post.' do
       expect(page).to have_content 'Hi Tom!'
     end
-
 
     it 'see a section for pagination.' do
       expect(page).to have_content 'Pagination'

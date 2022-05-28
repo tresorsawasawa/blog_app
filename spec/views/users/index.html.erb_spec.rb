@@ -4,8 +4,10 @@ RSpec.describe 'user_index_path', type: :system do
   describe 'User_index_view' do
     before(:each) do
       @users = [User.create!(name: 'Tresor', photo: '#photo_amy', bio: 'bio', email: 'tresor@test.com', password: 'pswd123', posts_counter: 0),
-                User.create!(name: 'James', photo: '#photo_james', bio: 'bio', email: 'james@test.com', password: 'pswd123', posts_counter: 10),
-                User.create!(name: 'Joe', bio: 'bio', email: 'joekam@test.com', password: 'password', posts_counter: 21)]
+                User.create!(name: 'James', photo: '#photo_james', bio: 'bio', email: 'james@test.com',
+                             password: 'pswd123', posts_counter: 10),
+                User.create!(name: 'Joe', bio: 'bio', email: 'joekam@test.com', password: 'password',
+                             posts_counter: 21)]
 
       visit new_user_session_path
 
