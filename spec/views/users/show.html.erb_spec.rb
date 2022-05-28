@@ -50,9 +50,7 @@ RSpec.describe 'User index page', type: :system do
     it "When I click a user's post, it redirects me to that post s show page." do
       visit user_post_path(@user.id, @p.id)
       expect(page).to have_content 'Like'
-      # expect(page).to have_content 'Delete Post'
     end
-
 
     it 'When I click to see all posts, it redirects me to the user s post s index page.' do
       visit user_posts_path(@user.id)

@@ -59,10 +59,13 @@ Check http://localhost:3000/ in your browser
 
 ### Run Test
 
-- To run the tests
-
+- To run models tests
 ```bash
 rspec spec/models
+```
+- To run views tests
+```bash
+bundle exec rspec spec/views
 ```
 
 ## Author
